@@ -1,0 +1,41 @@
+{
+  "version" : "0.9",
+  "name" : "Word Look Up",
+  "description" : "Look up words",
+  "browser_action":{
+    "default_popup" : "popup.html",
+    "default_title" : "Look up words"
+  },
+  "permissions": [
+      "storage",
+      "alarms",
+      "notifications",
+      "contextMenus",
+      "tabs",
+      "http://*/*",
+      "https://*/*"
+    ],
+  "web_accessible_resources": [
+      "jslib/jquery-3.1.1.js",
+      "styles/bootstrap.min.css", 
+      "jslib/bootstrap.min.js", 
+      "styles/alertify.min.css",
+      "jslib/alertify.min.js"
+  ],
+  "options_page":"options.html",
+  "background":{
+      "scripts" : ["jslib/jquery-3.1.1.js", "jslib/alertify.min.js","scripts/common.js", "scripts/background.js"],
+      "persistent" : true
+  },
+ "content_scripts":[
+    {
+      "js": ["jslib/jquery-3.1.1.js", "jslib/alertify.min.js", "scripts/contentScript.js"],
+      "css":["styles/alertify.min.css","styles/wordsearch.css"],
+      "matches":[  "http://*/*","https://*/*"],
+      "all_frames": true,
+      "run_at": "document_end"
+    }
+  ],
+
+  "manifest_version": 2
+}
