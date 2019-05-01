@@ -6,3 +6,7 @@ backend는 구축되어 있지 않아 현재 다음의 api를 빌려쓰고(?) �
 지금 이 프로젝트의 문제는
 1. 백앤드가 구축되어있지 않다
 2. 팝업윈도우가 미려하지 않다.
+
+
+개발 참고 페이지
+https://developer.chrome.com/extensions/getstarted
