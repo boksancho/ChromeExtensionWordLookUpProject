@@ -20,11 +20,14 @@ backend는 구축되어 있지 않아 현재 다음의 api를 빌려쓰고(?) �
 페이지 안에서 마우스로 영어 단어를 더블 클릭하면 자그마한 노란 창에 간단한 한글 풀이가 나옵니다.
 ![image](https://user-images.githubusercontent.com/436079/57021921-d31e2c00-6bea-11e9-9e97-d29a3b1165b7.png)
 
-## issues
+## Issues
 
 지금 이 프로젝트의 문제는
 1. 백앤드가 구축되어있지 않다
 2. 팝업윈도우가 미려하지 않다.
 
-## development reference
+## Development reference
 https://developer.chrome.com/extensions/getstarted
+
+## License
+[MIT](https://opensource.org/licenses/MIT)
